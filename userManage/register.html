@@ -1,0 +1,20 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>新用户注册</title>
+</head>
+
+<body>
+<form action="register_do.php" method="post" name="login">
+<a>用户名</a><input name="username" type="text" id="username"><br>
+<a>密码</a><input name="password" type="password" id="username"><br>
+<a>确认密码</a><input name="password2" type="password" id="password2"><br>
+<p><label>验证码（不区分大小写）：<br /><input name="TestCode2" type="text" id="TestCode2" size="8">
+<img src="codeTest.php" alt="验证码" onclick="this.src=this.src+'?' + Math.random();"/><a class="tip">看不清，点击图片换一张</a></label>
+</p>
+<input name="submit" type="submit" value="提交">
+<input type="reset" name="reset" value="清除">
+</form>
+</body>
+</html>

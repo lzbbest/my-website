@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<base target="_blank" />
+<title>手机简介</title>
+<style type="text/css">
+body{
+	background-repeat: no-repeat; 
+	margin-left: 100px; margin-top: 20px; margin-right: 100px;margin-bottom:20px;
+}
+div#htc{
+}
+.mobile{
+}
+</style>
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<script src="images/js/introduction.js" type="text/javascript"></script>
+</head>
+
+<body onload="MM_preloadImages('images/win8.1产品Id.png','images/usb接口.png')">
+<h1>手机构造</h1>
+<div class="htc">
+    <img src="images/introduction.jpg" alt="链接超时" width="781" height="562" usemap="#mobile" id="Image1" />
+    <map name="mobile" class="mobile">
+    <area shape="circle" coords="552,132,50" href="http://baike.baidu.com/link?url=jQpCzXZ1Z7Xl4EJQxxNR-CcbXh6ujErNlJyKlpPhnBgVaDVRHcLAVPJslapSKHYU1vAYrV_kXWmMkl2ROd5Bpq" />
+    <area shape="rect" coords="183,95,344,474" href="http://baike.baidu.com/link?url=5HQrHgn9IiJc6qkKJLavL6Nupz3cWthMyq9CsXbw4rO5kzeJci-mEfsJSesZDMyTmYb8RezHBl65e419k4fzCa" />
+    <area shape="rect" coords="82,159,138,233" href="#" onclick="MM_effectAppearFade(this, 1000, 100, 0, true)" onmouseover="MM_swapImage('Image1','','images/usb接口.png',1)" onmouseout="MM_swapImgRestore()" />
+    <area shape="rect" coords="273,34,347,66" href="#" />
+    </map>
+</div>
+<hr />
+<div>
+  <button onclick="playPause()">播放/暂停</button> 
+  <button onclick="makeBig()">大</button>
+  <button onclick="makeNormal()">中</button>
+  <button onclick="makeSmall()">小</button>
+  <br> 
+  <video id="video1" width="320" height="240">
+  	<source src="http://www.w3school.com.cn/i/movie.ogg" type="video/ogg">
+  <source src="http://www.w3school.com.cn/i/movie.mp4" type="video/mp4">
+	</video>
+</div>
+<script type="text/javascript">
+	var myVideo = document.getElementById("video1");
+	function playPause()  {  if (myVideo.paused)   myVideo.play();  else   myVideo.pause(); } 
+	function makeBig()  {  myVideo.width=640; } 
+	function makeSmall() { myVideo.width=160; } 
+	function makeNormal() { myVideo.width=320; } 
+</script> 
+
+<hr />
+
+<p>视频测试</p>
+<video width="320" height="240" controls="controls" src="images/团歌-光荣啊，中国共青团！_高清.mp4">
+</video>
+<hr />
+<p>音频</p>
+<audio controls="controls">
+  <source src="http://42.244.42.193:8090/download/88bacad0-03fd-41cb-86de-a31cd0b8215f.ogg" type="audio/ogg">
+  <source src="http://42.244.42.193:8090/download/88bacad0-03fd-41cb-86de-a31cd0b8215f.mp3" type="audio/mpeg">
+Your browser does not support the audio tag.
+</audio>
+
+
+
+
+
+<p>&nbsp; </p>
+</body>
+</html>

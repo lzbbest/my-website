@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>用户登录</title>
+<style type="text/css">
+.loginfont{
+	position:static;
+	font-size:36px;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;}
+.tip{
+	font-size:11px;}
+.div{
+	vertical-align:middle;
+	text-align:center;
+	box-shadow: 5px 5px 5px #CCC;
+	-moz-box-shadow: 10px 10px 5px #CCC; /* 老的 Firefox */
+	background-color:#CFF;
+	margin-left:15%;
+	margin-right:15%;
+	}
+</style>
+</head>
+
+<body>
+<div align="center" class="div">
+<div class="loginfont">用户登录</div>
+<form action="checklogin.php" method="post" name="form1" target="_blank" class="login">
+  <input name="username" type="text" id="username">(学生登录用户默认学号)<br>
+<input name="password" type="password" id="password">(学生登录密码默认学号)<br>
+<p><label>验证码（不区分大小写）：<br /><input name="TestCode2" type="text" id="TestCode2" size="8">
+<img src="codeTest.php" alt="验证码" onclick="this.src=this.src+'?' + Math.random();"/><a class="tip" onClick="this.src=this.src+'?' + Math.random();">看不清，点击图片换一张</a></label>
+</p>
+<input name="Submit" type="submit" value="提交">
+<input name="reset" type="reset" value="清除">
+</form>
+</div>
+</body>
+</html>

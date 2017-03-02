@@ -1,0 +1,18 @@
+#search{
+	margin-left:auto;
+	margin-right:auto;
+	vertical-align:middle;
+	text-align:center;
+	box-shadow: 5px 5px 5px #CCC;
+	-moz-box-shadow: 10px 10px 5px #CCC; /* 老的 Firefox */
+	background-color:#CFF;
+}
+#input_box{
+	width:500;
+}
+div.commentZone{
+	position: relative;
+  	min-height: 1px;
+  	padding-right: 15px;
+  	padding-left: 15px;
+	float:left;}
